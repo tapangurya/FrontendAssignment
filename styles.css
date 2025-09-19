@@ -131,6 +131,7 @@ footer {
   }
 
   footer {
+    padding: 1.5rem 1rem;
     font-size: 0.8rem;
   }
 }
@@ -182,4 +183,5 @@ footer {
     padding: 6px;
   }
 }
+
 
