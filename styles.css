@@ -178,10 +178,12 @@ footer {
   }
 
   footer {
+    padding: 1.5rem 1rem;
     font-size: 13px;
     text-align: center;
     padding: 6px;
   }
 }
+
 
 
