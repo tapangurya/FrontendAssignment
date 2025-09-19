@@ -85,18 +85,57 @@ footer {
   border-top: 1px solid #eee;
 }
 
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  #map {
+    height: 400px;
+  }
+}
+
+
 @media (max-width: 800px) {
   main {
     flex-direction: column;
   }
+
+  #map {
+    height: 300px;
+  }
+
   #info {
     width: 100%;
-    height: 150px;
+    height: auto;
     border-left: none;
     border-top: 1px solid #eee;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .controls input[type="range"] {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
 .leaflet-container {
   background: #eaeaea;
 }
+
