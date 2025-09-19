@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicle Movement Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🚗 Vehicle Movement on a Map</h1>
+      <div class="controls">
+        <button id="playPauseBtn">Play</button>
+        <label for="speedRange">Speed</label>
+        <input id="speedRange" type="range" min="0.25" max="4" step="0.25" value="1">
+      </div>
+    </header>
+
+    <main>
+      <div id="map"></div>
+
+      <aside id="info">
+        <h2>Vehicle Info</h2>
+        <p><strong>Coordinates:</strong> <span id="coords">—</span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp">—</span></p>
+        <p><strong>Elapsed:</strong> <span id="elapsed">00:00</span></p>
+        <p><strong>Speed (km/h):</strong> <span id="speed">—</span></p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Frontend Developer Intern — Vehicle Movement Simulation</p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
