@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Title</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: serif;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      overflow: hidden; 
+    }
+
+    h1 {
+      text-align: center;
+      white-space: nowrap; 
+      font-size: clamp(1rem, 8vw, 6rem); 
+      overflow: hidden;
+      text-overflow: ellipsis; 
+    }
+
+    @media (max-width: 350px) {
+      h1 {
+        font-size: 1rem; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Tapan Gurya</h1>
+</body>
+</html>
